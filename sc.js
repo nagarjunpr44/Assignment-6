@@ -1,5 +1,5 @@
-3.
-1.
+// 3.
+// 1.
 aa = (f,s,t) => {
     let f,s,t;
     console.log(f,s,t);

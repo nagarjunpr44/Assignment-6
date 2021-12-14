@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    fix.html
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+     <script>
+     alert( “I’m JavaScript!’);
+     </script>
+     Whats the error in this ?
+    </body>
+    </html>
+
+<!-- Solution -->
+
+ <script>
+ alert( "I’m JavaScript!");
+ </script>
+ Whats the error in this ?
+
+
+ <!-- 2.  -->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html> -->
+<!-- scripts.js
+
+alert(“I’m invoked!”);
+<!-- solution -->
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”scripts.js”></script> <!--Spelling mistake it should be scripts.js not script.js-->
+</body>
+</html>
+
+<!-- 3.  -->
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`Wor
+ ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working
+
+<!-- solution -->
+
+<!-- In Javascript it as automatic semmicolon insertion so it does not strictly require semicolons   -->
+
+<!-- 4. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+ <script>
+
+ let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+lname;
+alert( admin ); // "Guvi geek" 
+</script>
+
+<!-- solution -->
+
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+" "+lname;
+alert( admin ); // "Guvi geek"
+
+<!-- 5 solution -->
+
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+" "+lname;
+alert( `hello ${name}` ); 
+
+<!-- 6.solution -->
+
+let a = Number(prompt("First number?",2));
+let b = Number(prompt("Secondnumber?",2));
+alert(a + b);
+
+<!-- 7.solution -->
+
+var a = "2" < "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+<!-- Code was blasted because it return true when 2 >12 and if was executed
+     but now diffused is printed because now it returns false and else is executed
+-->
+
+<!--8.solution  -->
+
+let a = !prompt("Enter a number?");
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+
+<!-- 9.solution -->
+
+let value = prompt('How many runs you scored in this ball');
+if (value == 4) {
+      console.log("You hit a Four");
+} else if (value == 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+<!-- 10.solution -->
+
+let login = 'Employee';
+let message = (login == 'Employee') ?'Welcome' :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+<!-- 11.solution -->
+
+// You cant change the value of the msg
+let message;
+if (null || 2 || undefined)
+{
+ message = "welcome boss";
+}
+else
+{
+ message = "Go away";
+}
+  console.log(message);
+
+  <!-- 12.solution-->
+
+  let message;
+  let lock ;
+  //Dont change any code below this 
+  if (null || lock || undefined )
+  {
+    message = "Go away";
+  }
+  else
+  {
+   message = "welcome";
+  }
+    console.log(message);
+
+<!-- 13.solution -->
+let message;
+let lock ;
+//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+<!-- 14.solution -->
+
+let i = 3;
+while (i) {
+  console.log( i-- );
+}
+
+<!-- 15.solution -->
+
+let num=1;
+for(num;num<=10;num++){
+    console.log(num);
+}
+
+<!-- 16.solution -->
+
+//You are allowed to modify only one character 
+for (let num = 2; num <= 20; num += 2) {
+    console.log(num)
+  }
+
+<!-- 17.solution -->
+
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`);
+}
+
+<!-- 18.solution -->
+
+let countdown = 100;
+while (countdown >1) {
+  countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+}
+
+<!-- 19.solution -->
+
+var lemein = "0";
+var lemeout = 0;
+var msg = "";
+if (lemein) {
+ msg += "hi";
+ }
+if (lemeout) {
+ msg += 'Hello';
+}
+console.log(msg);
+
+<!-- Message printed was hi -because lemein is passed true value when assigned i.e "0" -->
+
+
+<!-- 20.solution -->
+
+var lemein = "0";
+var lemeout = 0;
+var msg = "";
+if (lemein) {
+ msg += "hi";
+ }
+if (lemeout) {
+ msg += 'Hello';
+}
+console.log(msg);
+
+<!-- Message printed is hi--because lemein is passed true value when assigned i.e "0"  -->
+
+
+
+
+</body>
+</html>
